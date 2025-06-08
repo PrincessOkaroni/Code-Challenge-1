@@ -1,30 +1,26 @@
-function calculateChaiIngredients() {
-  let numberOfCups = parseInt(
-    prompt("Karibu! How many cups of Chai Bora would you like to make?")
+function calculateBodaFare() {
+  let distanceInKm = parseFloat(
+    prompt("Unafika wapi Mkubwa? Kilometer ngapi?")
   );
 
-  if (isNaN(numberOfCups) || numberOfCups <= 0) {
-    console.log("Please enter a valid number of cups (greater than 0).");
+  if (isNaN(distanceInKm) || distanceInKm < 0) {
+    console.log("Please enter a valid distance (0 or greater).");
     return;
   }
 
-  const waterPerCup = 200; // ml
-  const milkPerCup = 50; // ml
-  const teaLeavesPerCup = 1; // tablespoon
-  const sugarPerCup = 2; // teaspoons
+  const baseFare = 50; // KES
+  const chargePerKm = 15; // KES per kilometer
 
-  // Calculate total ingredients based on number of cups
-  let totalWater = waterPerCup * numberOfCups;
-  let totalMilk = milkPerCup * numberOfCups;
-  let totalTeaLeaves = teaLeavesPerCup * numberOfCups;
-  let totalSugar = sugarPerCup * numberOfCups;
+  let distanceCharge = distanceInKm * chargePerKm;
+  let totalFare = baseFare + distanceCharge;
 
-  console.log(`To make ${numberOfCups} cups of Kenyan Chai, you will need:`);
-  console.log(`Water: ${totalWater} ml`);
-  console.log(`Milk: ${totalMilk} ml`);
-  console.log(`Tea Leaves (Majani): ${totalTeaLeaves} tablespoons`);
-  console.log(`Sugar (Sukari): ${totalSugar} teaspoons`);
-  console.log("\nEnjoy your Chai Bora!");
+  console.log(`Uko kwote? Io ni ${distanceInKm} km:`);
+  console.log(`Ukikalia Pikipiki: KES ${baseFare}`);
+  console.log(`Mpaka Uko: KES ${distanceCharge}`);
+  console.log(`Total: KES ${totalFare}`);
+  console.log("\nPanda Pikipiki!");
 }
 
-calculateChaiIngredients();
+calculateBodaFare();
+
+console.log(calculateBodaFare.toNumber);
