@@ -1,3 +1,4 @@
+var prompt = require("prompt-sync")(); // Importing prompt-sync for user input in Node.js
 // Chai Bora Calculator
 // This program calculates the ingredients needed to make a specified number of cups of Kenyan Chai.
 // It prompts the user for the number of cups and outputs the required amounts of water, milk, tea leaves, and sugar.

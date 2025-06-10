@@ -1,3 +1,4 @@
+var prompt = require("prompt-sync")(); // Importing prompt-sync for user input in Node.js
 // fee.js
 // Function to estimate mobile money transaction fee
 function estimateTransactionFee() {

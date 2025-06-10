@@ -1,0 +1,33 @@
+{
+  "name": "code-challenge-1",
+  "version": "1.0.0",
+  "description": "code challenge 1 -chaiCalculator, bodaFareCalculator, mobileMoneyEstimator",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --timeout 5000 -R mocha-multi --reporter-options spec=-,json=.results.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrincessOkaroni/Code-Challenge-1.git"
+  },
+  "keywords": [
+    "let",
+    "const",
+    "var"
+  ],
+  "author": "Okaroni Purity Nekesa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrincessOkaroni/Code-Challenge-1/issues"
+  },
+  "homepage": "https://github.com/PrincessOkaroni/Code-Challenge-1#readme",
+  "dependencies": {
+    "license": "^1.0.3",
+    "package-lock.json": "^1.0.0",
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^11.6.0",
+    "mocha-multi": "^1.1.7"
+  }
+}

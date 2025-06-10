@@ -1,3 +1,4 @@
+var prompt = require("prompt-sync")(); // Importing prompt-sync for user input in Node.js
 // Boda Fare Calculator
 // This program calculates the fare for a boda boda ride based on the distance in kilometers.
 // It prompts the user for the distance and outputs the fare breakdown.
@@ -31,6 +32,5 @@ function calculateBodaFare() {
 }
 
 // Call the function to execute the boda fare calculation
+module.exports = { calculateBodaFare };
 calculateBodaFare();
-
-console.log(calculateBodaFare.toNumber);
